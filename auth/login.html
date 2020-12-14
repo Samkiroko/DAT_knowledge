@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<!-- Mirrored from dialateacher.co.ke/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 12:13:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+	Dial a Teacher</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Test Meta Description Value">
+
+	<meta name="keywords" content="Test Meta Keyword Value ">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../assets/uploads/settings/thumbs/setting_152.png"/>
+	
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+       <!--[if lt IE 9]>
+           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+       <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../assets/front/css/main.css">
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div> -->
+    <!-- Ends Preloader -->
+    <!-- Nagigation -->
+    <nav class="navbar navbar-default yamm">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mega-nav-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a href="../index.html"><img src="../assets/uploads/settings/setting_35.png" class="logo " alt="logo"></a>
+            </div>
+
+            <!-- Collect the nav links, mega-menu, vertical-menu and other content for toggling -->
+            <div class="collapse navbar-collapse" id="mega-nav-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="" href="../index.html"> Home </a></li>
+
+                                            <li><a class="" href="../search-tutor.html"> Book a Teacher </a></li>
+
+                        <li><a class="" href="../search-institute.html"> Join an Institute </a></li>
+
+					   <li><a class="" href="../search-student-leads.html" title="Find Student Leads"> Teaching Jobs </a></li>
+                    
+
+                    
+                                        <li><a class="" href="../courses.html"> Tuition Categories</a></li>
+                    
+
+                    					<li>
+                        <a href="login.html"> <span class="nav-btn"> <i class="fa  fa-sign-in"></i> &nbsp; Login <span class="hidden-navbtn">Or Register</span></span>
+                        </a>
+                    </li>
+					
+					                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+       <!-- Ends Navigation --><style>
+
+.login-user-details {
+    display: -webkit-inline-box;
+}
+
+.login-user-details li {
+    text-align: center;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.login-user-details li a.positive {
+    border: 1px solid #9c969c;
+    background: #9c969c;
+    color: #fff;
+}
+
+.login-user-details li a {
+     padding: 5px 5px; 
+     display: block; 
+     text-decoration: none; 
+     border-radius: 3px; 
+     cursor: pointer; 
+}
+
+.list-unstyled {
+    /*padding-left: 20px;*/
+    /*margin: 10px;*/
+    list-style: none;
+}
+</style>
+<!-- Login/Register Panel -->
+<div class="login-register">
+	<div class="container">
+		<div class="row row-margin">
+			<!-- Sign in section -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="sign-block signin-left">
+					<h2><span>Sign In</span> With Your Account</h2>
+					
+					<span class="error"></span>
+					<form action="https://dialateacher.co.ke/auth/login" name="token_form" id="token_form" class="form-signin  comment-form" method="post" accept-charset="utf-8">
+						<div class="input-group ">
+							<label>Email&nbsp;<font color="red">*</font></label>
+							<input type="email" name="identity" value="" id="identity" placeholder="Email" class="form-control"  />
+							
+						</div>
+						<div class="input-group ">
+							<label>Password&nbsp;<font color="red">*</font></label>
+							<input type="password" name="password" value="" id="password" placeholder="Password" class="form-control"  />
+						</div>
+						<div class="check">
+							<a href="forgot_password.html" class="forgot-pass"> Forgot your password?</a>
+						</div>
+
+						<button class="btn-link-dark center-block" type="submit" name="btnLogin">Sign In</button>
+						</form>
+
+
+						
+						<!--social logins start-->
+					    		                <div class="slogin-form">
+							<div class="or-seperator"><i>or</i></div>
+							<h2><span>Log In</span> With</h2>
+
+														<a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fdialateacher.co.ke%2FGooglelogin%2F&amp;client_id=146942551019-q3qs3l81rv3cil0hn6f1i1l2lt3jkbtt.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=online&amp;approval_prompt=auto" class="social-button" id="google-connect"><span>Google</span></a>
+							
+														<a href="https://www.facebook.com/v2.6/dialog/oauth?client_id=692218931370560&amp;state=88cadd580e5c6f2e1c8ec646a978538a&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=https%3A%2F%2Fdialateacher.co.ke%2Fuser_authentication_facebook&amp;scope=email" title="Facebook Login" class="social-button" id="facebook-connect"><span>Facebook</span></a>
+							
+							<br><br>
+							<div class="forgot-pass">Note:(Google and Facebook) Only for Students</div>
+						</div>
+						
+		                <!--social logins end-->
+
+
+				</div>
+			</div>
+			<!-- Sign up section -->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<span class="error"></span>
+				<div class="sign-block">
+					<h2><span>Register </span> With Dial a teacher</h2>
+					<form action="https://dialateacher.co.ke/auth/login" class="form-signup comment-form" name="token_form" id="token_form" method="post" accept-charset="utf-8">
+
+						
+						<div class="input-group ">
+							<label>Register As&nbsp;<font color="red">*</font></label>
+							<div class="dark-picker dark-picker-bright">
+							<select name="user_belongs_group" id="u_group" class="select-picker" onchange="toggle_name();">
+<option value="" selected="selected">Please Select Group</option>
+<option value="2">Student</option>
+<option value="3">Tutor</option>
+<option value="4">Institute</option>
+</select>
+	
+						</div>
+						</div>
+
+						<div class="input-group ">
+							<label id="lbl_fname">First Name&nbsp;<font color="red">*</font></label>
+							<input type="text" name="first_name" value="" id="first_name" placeholder="First Name" class="form-control"  />
+	
+						</div>
+
+						<div class="input-group " id="div_lname">
+							<label>Last Name</label>
+								<input type="text" name="last_name" value="" id="last_name" placeholder="Last Name" class="form-control"  />
+						</div>
+
+						<div class="input-group ">
+							<label>Email&nbsp;<font color="red">*</font></label>
+							<input type="text" name="identity" value="" id="company_identity" placeholder="Email" class="form-control"  />
+						</div>
+						<div class="input-group ">
+							<label>Password &nbsp;<font color="red">*</font>(Must Be At Least 6 Characters):</label>
+							<input type="password" name="password" value="" id="company_password" placeholder="Password" class="form-control"  />
+						</div>
+						
+						<div class="input-group ">
+							<label>Confirm Password&nbsp;<font color="red">*</font></label>
+							<input type="password" name="password_confirm" value="" id="password_confirm" placeholder="Confirm Password" class="form-control"  />
+						</div>
+						
+						<div class="input-group ">
+							<label>Phone Number&nbsp;<font color="red">*</font></label>
+							<div class="row">
+	    						<div class="col-sm-6 pad-right0">
+	    							<div class="dark-picker dark-picker-bright">
+									<select name="phone_code" id="phone_code" class="select-picker" style="max-width: 150px;">
+<option value="" selected="selected">Select Phone Code</option>
+<option value="0_93">Afghanistan +93</option>
+<option value="1_355">Albania +355</option>
+<option value="2_213">Algeria +213</option>
+<option value="3_1684">American Samoa +1684</option>
+<option value="4_376">Andorra +376</option>
+<option value="5_244">Angola +244</option>
+<option value="6_1264">Anguilla +1264</option>
+<option value="7_0">Antarctica +0</option>
+<option value="8_1268">Antigua and Barbuda +1268</option>
+<option value="9_54">Argentina +54</option>
+<option value="10_374">Armenia +374</option>
+<option value="11_297">Aruba +297</option>
+<option value="12_61">Australia +61</option>
+<option value="13_43">Austria +43</option>
+<option value="14_994">Azerbaijan +994</option>
+<option value="15_1242">Bahamas +1242</option>
+<option value="16_973">Bahrain +973</option>
+<option value="17_880">Bangladesh +880</option>
+<option value="18_1246">Barbados +1246</option>
+<option value="19_375">Belarus +375</option>
+<option value="20_32">Belgium +32</option>
+<option value="21_501">Belize +501</option>
+<option value="22_229">Benin +229</option>
+<option value="23_1441">Bermuda +1441</option>
+<option value="24_975">Bhutan +975</option>
+<option value="25_591">Bolivia +591</option>
+<option value="26_387">Bosnia and Herzegovina +387</option>
+<option value="27_267">Botswana +267</option>
+<option value="28_0">Bouvet Island +0</option>
+<option value="29_55">Brazil +55</option>
+<option value="30_246">British Indian Ocean Territory +246</option>
+<option value="31_673">Brunei Darussalam +673</option>
+<option value="32_359">Bulgaria +359</option>
+<option value="33_226">Burkina Faso +226</option>
+<option value="34_257">Burundi +257</option>
+<option value="35_855">Cambodia +855</option>
+<option value="36_237">Cameroon +237</option>
+<option value="37_1">Canada +1</option>
+<option value="38_238">Cape Verde +238</option>
+<option value="39_1345">Cayman Islands +1345</option>
+<option value="40_236">Central African Republic +236</option>
+<option value="41_235">Chad +235</option>
+<option value="42_56">Chile +56</option>
+<option value="43_86">China +86</option>
+<option value="44_61">Christmas Island +61</option>
+<option value="45_672">Cocos (Keeling) Islands +672</option>
+<option value="46_57">Colombia +57</option>
+<option value="47_269">Comoros +269</option>
+<option value="48_242">Congo +242</option>
+<option value="49_242">Congo, the Democratic Republic of the +242</option>
+<option value="50_682">Cook Islands +682</option>
+<option value="51_506">Costa Rica +506</option>
+<option value="52_225">Cote D'Ivoire +225</option>
+<option value="53_385">Croatia +385</option>
+<option value="54_53">Cuba +53</option>
+<option value="55_357">Cyprus +357</option>
+<option value="56_420">Czech Republic +420</option>
+<option value="57_45">Denmark +45</option>
+<option value="58_253">Djibouti +253</option>
+<option value="59_1767">Dominica +1767</option>
+<option value="60_1809">Dominican Republic +1809</option>
+<option value="61_593">Ecuador +593</option>
+<option value="62_20">Egypt +20</option>
+<option value="63_503">El Salvador +503</option>
+<option value="64_240">Equatorial Guinea +240</option>
+<option value="65_291">Eritrea +291</option>
+<option value="66_372">Estonia +372</option>
+<option value="67_251">Ethiopia +251</option>
+<option value="68_500">Falkland Islands (Malvinas) +500</option>
+<option value="69_298">Faroe Islands +298</option>
+<option value="70_679">Fiji +679</option>
+<option value="71_358">Finland +358</option>
+<option value="72_33">France +33</option>
+<option value="73_594">French Guiana +594</option>
+<option value="74_689">French Polynesia +689</option>
+<option value="75_0">French Southern Territories +0</option>
+<option value="76_241">Gabon +241</option>
+<option value="77_220">Gambia +220</option>
+<option value="78_995">Georgia +995</option>
+<option value="79_49">Germany +49</option>
+<option value="80_233">Ghana +233</option>
+<option value="81_350">Gibraltar +350</option>
+<option value="82_30">Greece +30</option>
+<option value="83_299">Greenland +299</option>
+<option value="84_1473">Grenada +1473</option>
+<option value="85_590">Guadeloupe +590</option>
+<option value="86_1671">Guam +1671</option>
+<option value="87_502">Guatemala +502</option>
+<option value="88_224">Guinea +224</option>
+<option value="89_245">Guinea-Bissau +245</option>
+<option value="90_592">Guyana +592</option>
+<option value="91_509">Haiti +509</option>
+<option value="92_0">Heard Island and Mcdonald Islands +0</option>
+<option value="93_39">Holy See (Vatican City State) +39</option>
+<option value="94_504">Honduras +504</option>
+<option value="95_852">Hong Kong +852</option>
+<option value="96_36">Hungary +36</option>
+<option value="97_354">Iceland +354</option>
+<option value="98_91">India +91</option>
+<option value="99_62">Indonesia +62</option>
+<option value="100_98">Iran, Islamic Republic of +98</option>
+<option value="101_964">Iraq +964</option>
+<option value="102_353">Ireland +353</option>
+<option value="103_972">Israel +972</option>
+<option value="104_39">Italy +39</option>
+<option value="105_1876">Jamaica +1876</option>
+<option value="106_81">Japan +81</option>
+<option value="107_962">Jordan +962</option>
+<option value="108_7">Kazakhstan +7</option>
+<option value="109_254">Kenya +254</option>
+<option value="110_686">Kiribati +686</option>
+<option value="111_850">Korea, Democratic People's Republic of +850</option>
+<option value="112_82">Korea, Republic of +82</option>
+<option value="113_965">Kuwait +965</option>
+<option value="114_996">Kyrgyzstan +996</option>
+<option value="115_856">Lao People's Democratic Republic +856</option>
+<option value="116_371">Latvia +371</option>
+<option value="117_961">Lebanon +961</option>
+<option value="118_266">Lesotho +266</option>
+<option value="119_231">Liberia +231</option>
+<option value="120_218">Libyan Arab Jamahiriya +218</option>
+<option value="121_423">Liechtenstein +423</option>
+<option value="122_370">Lithuania +370</option>
+<option value="123_352">Luxembourg +352</option>
+<option value="124_853">Macao +853</option>
+<option value="125_389">Macedonia, the Former Yugoslav Republic of +389</option>
+<option value="126_261">Madagascar +261</option>
+<option value="127_265">Malawi +265</option>
+<option value="128_60">Malaysia +60</option>
+<option value="129_960">Maldives +960</option>
+<option value="130_223">Mali +223</option>
+<option value="131_356">Malta +356</option>
+<option value="132_692">Marshall Islands +692</option>
+<option value="133_596">Martinique +596</option>
+<option value="134_222">Mauritania +222</option>
+<option value="135_230">Mauritius +230</option>
+<option value="136_269">Mayotte +269</option>
+<option value="137_52">Mexico +52</option>
+<option value="138_691">Micronesia, Federated States of +691</option>
+<option value="139_373">Moldova, Republic of +373</option>
+<option value="140_377">Monaco +377</option>
+<option value="141_976">Mongolia +976</option>
+<option value="142_1664">Montserrat +1664</option>
+<option value="143_212">Morocco +212</option>
+<option value="144_258">Mozambique +258</option>
+<option value="145_95">Myanmar +95</option>
+<option value="146_264">Namibia +264</option>
+<option value="147_674">Nauru +674</option>
+<option value="148_977">Nepal +977</option>
+<option value="149_31">Netherlands +31</option>
+<option value="150_599">Netherlands Antilles +599</option>
+<option value="151_687">New Caledonia +687</option>
+<option value="152_64">New Zealand +64</option>
+<option value="153_505">Nicaragua +505</option>
+<option value="154_227">Niger +227</option>
+<option value="155_234">Nigeria +234</option>
+<option value="156_683">Niue +683</option>
+<option value="157_672">Norfolk Island +672</option>
+<option value="158_1670">Northern Mariana Islands +1670</option>
+<option value="159_47">Norway +47</option>
+<option value="160_968">Oman +968</option>
+<option value="161_92">Pakistan +92</option>
+<option value="162_680">Palau +680</option>
+<option value="163_970">Palestinian Territory, Occupied +970</option>
+<option value="164_507">Panama +507</option>
+<option value="165_675">Papua New Guinea +675</option>
+<option value="166_595">Paraguay +595</option>
+<option value="167_51">Peru +51</option>
+<option value="168_63">Philippines +63</option>
+<option value="169_0">Pitcairn +0</option>
+<option value="170_48">Poland +48</option>
+<option value="171_351">Portugal +351</option>
+<option value="172_1787">Puerto Rico +1787</option>
+<option value="173_974">Qatar +974</option>
+<option value="174_262">Reunion +262</option>
+<option value="175_40">Romania +40</option>
+<option value="176_70">Russian Federation +70</option>
+<option value="177_250">Rwanda +250</option>
+<option value="178_290">Saint Helena +290</option>
+<option value="179_1869">Saint Kitts and Nevis +1869</option>
+<option value="180_1758">Saint Lucia +1758</option>
+<option value="181_508">Saint Pierre and Miquelon +508</option>
+<option value="182_1784">Saint Vincent and the Grenadines +1784</option>
+<option value="183_684">Samoa +684</option>
+<option value="184_378">San Marino +378</option>
+<option value="185_239">Sao Tome and Principe +239</option>
+<option value="186_966">Saudi Arabia +966</option>
+<option value="187_221">Senegal +221</option>
+<option value="188_381">Serbia and Montenegro +381</option>
+<option value="189_248">Seychelles +248</option>
+<option value="190_232">Sierra Leone +232</option>
+<option value="191_65">Singapore +65</option>
+<option value="192_421">Slovakia +421</option>
+<option value="193_386">Slovenia +386</option>
+<option value="194_677">Solomon Islands +677</option>
+<option value="195_252">Somalia +252</option>
+<option value="196_27">South Africa +27</option>
+<option value="197_0">South Georgia and the South Sandwich Islands +0</option>
+<option value="198_34">Spain +34</option>
+<option value="199_94">Sri Lanka +94</option>
+<option value="200_249">Sudan +249</option>
+<option value="201_597">Suriname +597</option>
+<option value="202_47">Svalbard and Jan Mayen +47</option>
+<option value="203_268">Swaziland +268</option>
+<option value="204_46">Sweden +46</option>
+<option value="205_41">Switzerland +41</option>
+<option value="206_963">Syrian Arab Republic +963</option>
+<option value="207_886">Taiwan, Province of China +886</option>
+<option value="208_992">Tajikistan +992</option>
+<option value="209_255">Tanzania, United Republic of +255</option>
+<option value="210_66">Thailand +66</option>
+<option value="211_670">Timor-Leste +670</option>
+<option value="212_228">Togo +228</option>
+<option value="213_690">Tokelau +690</option>
+<option value="214_676">Tonga +676</option>
+<option value="215_1868">Trinidad and Tobago +1868</option>
+<option value="216_216">Tunisia +216</option>
+<option value="217_90">Turkey +90</option>
+<option value="218_7370">Turkmenistan +7370</option>
+<option value="219_1649">Turks and Caicos Islands +1649</option>
+<option value="220_688">Tuvalu +688</option>
+<option value="221_256">Uganda +256</option>
+<option value="222_380">Ukraine +380</option>
+<option value="223_971">United Arab Emirates +971</option>
+<option value="224_44">United Kingdom +44</option>
+<option value="225_1">United States +1</option>
+<option value="226_1">United States Minor Outlying Islands +1</option>
+<option value="227_598">Uruguay +598</option>
+<option value="228_998">Uzbekistan +998</option>
+<option value="229_678">Vanuatu +678</option>
+<option value="230_58">Venezuela +58</option>
+<option value="231_84">Viet Nam +84</option>
+<option value="232_1284">Virgin Islands, British +1284</option>
+<option value="233_1340">Virgin Islands, U.s. +1340</option>
+<option value="234_681">Wallis and Futuna +681</option>
+<option value="235_212">Western Sahara +212</option>
+<option value="236_967">Yemen +967</option>
+<option value="237_260">Zambia +260</option>
+<option value="238_263">Zimbabwe +263</option>
+<option value="239_381">Serbia +381</option>
+<option value="240_0">Asia / Pacific Region +0</option>
+<option value="241_382">Montenegro +382</option>
+<option value="242_358">Aland Islands +358</option>
+<option value="243_599">Bonaire, Sint Eustatius and Saba +599</option>
+<option value="244_599">Curacao +599</option>
+<option value="245_44">Guernsey +44</option>
+<option value="246_44">Isle of Man +44</option>
+<option value="247_44">Jersey +44</option>
+<option value="248_381">Kosovo +381</option>
+<option value="249_590">Saint Barthelemy +590</option>
+<option value="250_590">Saint Martin +590</option>
+<option value="251_1">Sint Maarten +1</option>
+<option value="252_211">South Sudan +211</option>
+</select>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="phone" value="" id="phone" placeholder="Phone" class="form-control"  />
+								</div>
+							</div>
+						</div>
+						<div>
+                          <input type="checkbox" id="terms" name="terms"
+                                 checked>
+                          <label for="terms">By creating an account, you agree to our <a target="_blank" href=../home/terms-and-conditions.html>Terms & Conditions</a></label>
+                        </div>
+						<button class="btn-link-dark  center-block" type="submit" name="create">Create An Account</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Login/Register Panel -->
+
+<script src="../assets/front/js/jquery.js"></script>
+<script>
+$(function () {
+	toggle_name();
+});
+function toggle_name()
+{
+	grp_type = $('#u_group option:selected').val();
+
+	if(grp_type == 4) {
+
+		$('#lbl_fname').html('Institute Name&nbsp;<font color="red">*</font>');
+		$('#first_name').attr('placeholder', "Institute Name");
+		$('#div_lname').slideUp();
+
+	} else {
+
+		$('#lbl_fname').html('First Name&nbsp;<font color="red">*</font>');
+		$('#first_name').attr('placeholder', "First Name");
+		$('#div_lname').slideDown();
+	}
+}
+
+
+function setCredentials(userType) {
+
+  username = 'micheljohn930@gmail.com';
+  password = 'password';
+
+  if (userType=='admin') {
+    username = 'admin@admin.com';
+    password = '123456789';
+  }
+  else if (userType=='tutor') {
+    username = 'bellaadwerd123@gmail.com';
+    password = 'password';
+  }
+  else if (userType=='institute') {
+    username = 'bebe34@gma.com';
+    password = 'password';
+
+  } else if (userType=='institute_tutor') {
+    username = 'blimi33@gma.com';
+    password = 'password';
+  }
+
+  $('#identity').val(username);
+  $('#password').val(password);
+}
+</script> <!-- Footer -->
+ <footer>
+     <div class="footer-wrappper footer-bg">
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-3 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo mb-25">
+                                    <a href="../index.html"><img src="../assets/front/images/logo/logo2_footer.png" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>We are committed to connecting and bridging knowledge and
+                                        skills so as to equip and prepare every learner or student to take
+                                        over the future.</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Dial a Teacher</h4>
+                    <ul>
+                      <li><a href="../about-us.html">About Us</a></li>
+                                                                              <li><a href="../search-tutor.html">Find A Private Teacher</a></li>                                                  <li><a href="../search-institute.html">Join a Group Class</a></li>                                                  <li><a href="login.html">Become a Teacher</a></li>                    </ul>
+                  </div>
+                </div>
+              </div>
+                    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-3">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>More</h4>
+                                <ul>
+                                    <li><a href="../home/terms-and-conditions.html">Privacy Policy</a></li>
+                                    <li><a href="../home/terms-and-conditions.html">Terms And Conditons</a></li>
+                                    <li><a href="../faqs.html">Knowledge base</a></li>
+                                    <li><a href="../contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                               <div class="row justify-content-start">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="https://exam.dialateacher.co.ke/" class="border-btn">Dial A
+                            Teacher Exam platform</a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera text-center">
+                                        <p>Download Our mobile app for easy booking and course purchasing</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-appdownload">
+                    <hr class="footer-hr hidden-xs">
+                                        <a href="https://itunes.apple.com/in/genre/ios/id36?mt=8" target="_blank"><img src="../assets/front/images/icn-istore.png" alt="IOS app link"> Apple Store</a>
+                    
+                                        <a href="https://play.google.com/store?hl=en" target="_blank"><img src="../assets/front/images/icn-playstore.png" alt="Android app link">Google Play</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p>
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> | All rights reserved 
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer End-->
+      </div>
+  </footer> 
+<!-- Ends Footer -->
+
+
+<!-- Scroll Up --> 
+ <div class="form-box " id="myDIV">
+			<h2 class="login-header"><i class="far fa-comment-dots icon"></i>Support Center</h2>
+			<div class="test">
+				<form class="formInput">
+					<div>
+						<input type="text" required id="test">
+						<label class="inputLabel">Name</label>
+					</div>
+					
+					<div>
+						<input type="text" id="numberText" required>
+						<label class="inputLabel">Mobile No.</label>
+					</div>
+					<div>
+						<input type="text"  required>
+						<label class="inputLabel">Message</label>
+					</div>
+					<div>
+						<input type="file" id="inputFile" required><label id="labelFile" for="inputFile">
+					<i class="far fa-file-image" id="iconPhoto"></i>Choose a Photo</label>
+				</div>
+			
+			<p id="legal">Will get back to you within 24hr. Have a good one. </p>
+			<input type="submit" value="Send" id="submitButt" class="active">
+		</form>
+		</div>
+		<div class="footer"></div>
+		</div>
+    <button class="floating-btn" onclick="myFunction()">
+      <i class="fa fa-comments"></i>
+    </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+		$('#submitButt').click(function() {
+			$(this).toggleClass('active');
+		});
+		$(function() {
+			$("#test").focus();
+		});
+		document.querySelector('.floating-btn').addEventListener('click', function(e) {
+  			e.target.closest('button').classList.toggle('clicked');
+		});
+		
+		function myFunction() {
+		  var x = document.getElementById("myDIV");
+      console.log(x);
+      console.log(x.classList.contains('open'));
+		  if (x.classList.contains('open')) {
+		    x.classList.remove("open");
+		  } else {
+		    x.classList.add("open");
+		    document.getElementById("test").focus();
+
+		  }
+		}
+		</script> 
+<!-- Scroll Up end -->
+
+
+
+
+<!-- Script files -->
+<script src="../assets/front/js/jquery.js"></script>
+
+<link rel="stylesheet" href="../assets/front/css/jquery-ui.css">
+<script src="../assets/front/js/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( ".custom_accordion" ).accordion({
+        heightStyle: "content"
+    });
+  });
+</script>
+
+
+
+
+<!--Bootstrap Page-->
+<script src="../assets/front/js/bootstrap.min.js"></script>
+<!--Profile Page-->
+<script src="../assets/front/js/marquee.js"></script>
+<script type="text/javascript" src="../assets/front/js/flatpickr.min.js"></script>
+
+<script type="text/javascript" src="../assets/front/js/select2.min.js"></script>
+<script type="text/javascript" src="../assets/front/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../assets/front/js/jRate.min.js"></script>
+<script type="text/javascript" src="../assets/front/js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="../assets/front/js/jquery.smartmenus.js"></script>
+<script type="text/javascript" src="../assets/front/js/jquery.smartmenus.bootstrap.js"></script>
+<script type="text/javascript" src="../assets/front/js/flexgrid.js"></script>
+<script type="text/javascript" src="../assets/front/js/countUp.js"></script>
+<script type="text/javascript" src="../assets/front/js/jquery.dataTables.min.js"></script>
+<!-- Custom Script -->
+<script type="text/javascript" src="../assets/front/js/main.js"></script>
+
+<!--Gallery-->
+<script type="text/javascript" src="../assets/front/js/fileinput.min.js"></script>
+
+
+<!--COntact us page-->
+<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-h5q6y2eBfFV5X7QV6Z5mrFFU2s97XJs&sensor=false"></script>
+<script>
+$(document).ready(function () {
+    "use strict";
+
+    function e() {
+        var e = {
+                center: a,
+                zoom: 10,
+                /*scrollwheel:!0*/
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                    featureType: "landscape",
+                    stylers: [{
+                        hue: "#FFBB00"
+                }, {
+                        saturation: 43.400000000000006
+                }, {
+                        lightness: 37.599999999999994
+                }, {
+                        gamma: 1
+                }]
+            }, {
+                    featureType: "road.highway",
+                    stylers: [{
+                        hue: "#FFC200"
+                }, {
+                        saturation: -61.8
+                }, {
+                        lightness: 45.599999999999994
+                }, {
+                        gamma: 1
+                }]
+            }, {
+                    featureType: "road.arterial",
+                    stylers: [{
+                        hue: "#FF0300"
+                }, {
+                        saturation: -100
+                }, {
+                        lightness: 51.19999999999999
+                }, {
+                        gamma: 1
+                }]
+            }, {
+                    featureType: "road.local",
+                    stylers: [{
+                        hue: "#FF0300"
+                }, {
+                        saturation: -100
+                }, {
+                        lightness: 52
+                }, {
+                        gamma: 1
+                }]
+            }, {
+                    featureType: "water",
+                    stylers: [{
+                        hue: "#0078FF"
+                }, {
+                        saturation: -13.200000000000003
+                }, {
+                        lightness: 2.4000000000000057
+                }, {
+                        gamma: 1
+                }]
+            }, {
+                    featureType: "poi",
+                    stylers: [{
+                        hue: "#00FF6A"
+                }, {
+                        saturation: -1.0989010989011234
+                }, {
+                        lightness: 11.200000000000017
+                }, {
+                        gamma: 1
+                }]
+            }]
+
+            },
+            t = new google.maps.Map(document.getElementById("tutors_map"), e),
+            s = {
+                url: "assets/front/images/logo_google_map.png"
+            },
+            o = new google.maps.Marker({
+                position: a,
+                map: t,
+                icon: s,
+                animation: google.maps.Animation.BOUNCE
+            });
+        o.setMap(t);
+        var n = new google.maps.InfoWindow({
+            content: "<strong>Westland, peponi Rd <br> Westlands, Nairobi 00606</strong>"
+        });
+        google.maps.event.addListener(o, "click", function () {
+            n.open(t, o)
+        })
+    }
+    var a;
+    a = new google.maps.LatLng("17.4459764", "78.38607860000002"), google.maps.event.addDomListener(window, "load", e), a = new google.maps.LatLng("17.4459764", "78.38607860000002")
+});
+</script-->
+
+
+<script>
+    $(function() {
+        $(".stu-certificate").attr("target", "_blank");
+    });
+</script>
+
+
+</body>
+
+
+<!-- Mirrored from dialateacher.co.ke/auth/login by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 12:13:25 GMT -->
+</html>
+ 
