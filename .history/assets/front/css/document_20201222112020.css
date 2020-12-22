@@ -1553,7 +1553,7 @@ code {
 }
 
 #sy-whatshelp a.sywh-open-services {
-  background-color: #976FFF;
+  background-color: #7073FF;
   color: #fff;
   line-height: 55px;
   margin-top: 10px;
@@ -1616,9 +1616,6 @@ code {
 
 #sy-whatshelp .sywh-services a.messenger i {
   background-color: #0084ff;
-}
-#sy-whatshelp .sywh-services a.faq i {
-  background-color: #760960;
 }
 
 #sy-whatshelp .sywh-services a.whatsapp i {

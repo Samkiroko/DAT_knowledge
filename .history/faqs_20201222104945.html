@@ -140,9 +140,7 @@
                             <h3>STUDENT</h3>
                             <p> It
                                 provides an automated
-                                system which makes it easy to search for tutor,enroll to an institute or
-                                buy downloadable courses.
-                            </p>
+                                system which makes it easy to search for tutor or enroll to an institute. </p>
                             <button type="button" class="mwb-primary-btn mwb-documentation-section__btn">Read
                                 more...</button>
                         </a>
@@ -371,55 +369,61 @@
             </svg>
             <!-- end svg -->
             <!-- Scroll Up -->
-            <div id="sy-whatshelp">
-                <div class="sywh-services">
-                    <a href="faqs.html" class="faq" data-tooltip="FAQ's" data-placement="left" target="_blank">
-                        <i class="fa fa-question"></i>
-                    </a>
-                    <a href="mailto:support@dialateacher.co.ke" class="messenger" data-tooltip="Email US"
-                        data-placement="left" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                    <a href="https://wa.me/254727274264" class="whatsapp" data-tooltip="WhatsApp" data-placement="left"
-                        target="_blank">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
-                    <a href="tel:+254727274264" class="call" data-tooltip="Call" data-placement="left">
-                        <i class="fa fa-phone"></i>
-                    </a>
+            <div class="form-box " id="myDIV">
+                <h2 class="login-header"><i class="far fa-comment-dots icon"></i>Support Center</h2>
+                <div class="test">
+                    <form class="formInput">
+                        <div>
+                            <input type="text" required id="test">
+                            <label class="inputLabel">Name</label>
+                        </div>
+
+                        <div>
+                            <input type="text" id="numberText" required>
+                            <label class="inputLabel">Mobile No.</label>
+                        </div>
+                        <div>
+                            <input type="text" required>
+                            <label class="inputLabel">Message</label>
+                        </div>
+                        <div>
+                            <input type="file" id="inputFile" required><label id="labelFile" for="inputFile">
+                                <i class="far fa-file-image" id="iconPhoto"></i>Choose a Photo</label>
+                        </div>
+
+                        <p id="legal">Will get back to you within 24hr. Have a good one. </p>
+                        <input type="submit" value="Send" id="submitButt" class="active">
+                    </form>
                 </div>
-                <a class="sywh-open-services" data-tooltip="Support" data-placement="left">
-                    <i class="far fa-comment-dots"></i>
-                    <i class="fa fa-times"></i>
-                </a>
+                <div class="footer"></div>
             </div>
+            <button class="floating-btn" onclick="myFunction()">
+                <i class="fa fa-comments"></i>
+            </button>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script>
-                jQuery(function ($) {
-                    $('a.sywh-open-services').click(function () {
-                        if ($('.sywh-services').hasClass('active')) {
-                            $('.sywh-services').removeClass('active');
-                            $('a.sywh-open-services i.fa-times').hide();
-                            $('a.sywh-open-services i.fa-comments').show();
-                            $('a.sywh-open-services').removeClass('data-tooltip-hide');
-                            $('.sywh-services a:nth-child(1)').delay(0).fadeOut();
-                            $('.sywh-services a:nth-child(2)').delay(100).fadeOut();
-                            $('.sywh-services a:nth-child(3)').delay(200).fadeOut();
-                            $('.sywh-services a:nth-child(4)').delay(300).fadeOut();
-                            $('.sywh-services a:nth-child(5)').delay(400).fadeOut();
-                        } else {
-                            $('.sywh-services').addClass('active');
-                            $('a.sywh-open-services i.fa-comments').hide();
-                            $('a.sywh-open-services i.fa-times').show();
-                            $('a.sywh-open-services').addClass('data-tooltip-hide');
-                            $('.sywh-services a:nth-child(5)').delay(0).fadeIn();
-                            $('.sywh-services a:nth-child(4)').delay(100).fadeIn();
-                            $('.sywh-services a:nth-child(3)').delay(200).fadeIn();
-                            $('.sywh-services a:nth-child(2)').delay(300).fadeIn();
-                            $('.sywh-services a:nth-child(1)').delay(400).fadeIn();
-                        }
-                    });
+                $('#submitButt').click(function () {
+                    $(this).toggleClass('active');
                 });
+                $(function () {
+                    $("#test").focus();
+                });
+                document.querySelector('.floating-btn').addEventListener('click', function (e) {
+                    e.target.closest('button').classList.toggle('clicked');
+                });
+
+                function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    console.log(x);
+                    console.log(x.classList.contains('open'));
+                    if (x.classList.contains('open')) {
+                        x.classList.remove("open");
+                    } else {
+                        x.classList.add("open");
+                        document.getElementById("test").focus();
+
+                    }
+                }
             </script>
             <!-- Scroll Up end -->
 
@@ -441,7 +445,7 @@
 
 
 
-            <script src="https://kit.fontawesome.com/aa7e121ff6.js" crossorigin="anonymous"></script>
+
             <!--Bootstrap Page-->
             <script src="assets/front/js/bootstrap.min.js"></script>
             <!--Profile Page-->
